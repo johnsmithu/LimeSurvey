@@ -1,0 +1,116 @@
+// This file must be imported before loading html5-boilerplate
+@import "compass/css3";
+@import "compass/utilities";
+
+// Including utilities custom utilities
+@import "utilities";
+
+// Basic colors
+$black: #111;
+$white: #fff;
+
+// Major colors
+$major-blue: #00788a;
+$major-dark-green: #5d9732;
+$major-light-green: #c8df8e;
+$major-yellow: #ebed8a;
+$major-orange: #e99619;
+
+// Minor colors
+$minor-green: #4c721d; 		// Small Text
+$minor-light-blue: #99d7db; // Shaded accent
+$minor-purple: #78496a;
+
+$font-color: $black !default;
+
+$link-color: $major-blue !default;
+$link-hover-color: $major-dark-green !default;
+$link-visited-color: $minor-purple !default;
+
+$selected-font-color: $white !default;
+$selected-background-color: $minor-purple !default;
+
+$valid-background-color: $major-light-green !default;
+$invalid-background-color: $major-yellow !default;
+
+/*--------------------------------------------------
+	Layout 
+  --------------------------------------------------
+
+	Setting column sizes is now more flexible than
+	before. You can now set your own breakpoints,
+	as well as completely different layouts per
+	breakpoint. (Defaults are 12 columns at
+	48rem and 60rem.)
+	
+	Provide numbers calculated as REM without units,
+	mixins will do the rest.
+
+	Use:
+		@include px-rem(padding, 1, 2, 3, 4);
+		@include px-rem(margin-bottom, 10 auto 0 auto);
+
+	Result:
+		padding: 16px 32px 48px 60px;
+		padding: 1rem 2rem 3rem 4rem;
+		margin-bottom: 160px auto 0px auto;
+		margin-bottom: 10rem auto 0rem auto;
+
+  ---------------------------------------------------
+*/
+
+
+/* 6 columns */
+$small-width: 48;
+$small-column: 6.75;
+$small-gutter: 1.5;
+
+/* 12 columns */
+$large-width: 60;
+$large-column: 2.25;
+$large-gutter: 3;
+
+
+
+/*--------------------------------------------------
+	Typographic Scale 
+  --------------------------------------------------
+	http://modularscale.com/scale/?px1=16&px2=12&ra1=1.5&ra2=0
+	
+	Line-height can now be set by breakpoints.
+*/
+
+$base-plus-six: 5.063;
+$base-plus-five: 3.375;
+$base-plus-four: 2.25;			// h1
+$base-plus-three: 1.688;		// h2
+$base-plus-two: 1.5;			// h3
+$base-plus-one: 1.125;			// h6, h5, h4
+$base: 1;						// paragraph
+$base-minus-one: .75;			// small
+$base-minus-two: .5;
+$base-minus-three: .333;
+$base-minus-four: .222;
+$base-minus-five: .099;
+$base-minus-six: .066;
+
+$small-line-height: $base-plus-two;
+$large-line-height: $base-plus-three;
+
+// Transitions
+$color-transition: color 0.5s ease;
+$background-transition: background 0.5s ease;
+$border-transition: border 0.3s ease;
+$opacity-transition: opacity 0.5s ease;
+$width-transition: width .75s ease;
+$height-transition: height .75s ease;
+
+
+@mixin clearfix {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}

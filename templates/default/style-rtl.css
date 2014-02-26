@@ -1,0 +1,215 @@
+/* This CSS file is included if a Right-to-Left language is used */
+/* line 2, sass/style-rtl.scss */
+.outerframe.answertextright {
+  text-align: right;
+}
+
+/* line 5, sass/style-rtl.scss */
+.survey-groupdescription {
+  padding: 0 3px 2px 0;
+}
+
+/* line 8, sass/style-rtl.scss */
+.survey-groupname {
+  padding: 2px 3px 0 0;
+}
+
+/* line 11, sass/style-rtl.scss */
+.survey-question {
+  margin: 0 5px 0 0;
+  padding: 0 3px 0 0;
+}
+
+/* line 15, sass/style-rtl.scss */
+.survey-question-help {
+  margin: 2px 2px 0 0;
+}
+
+/* line 18, sass/style-rtl.scss */
+.survey-question-help img {
+  padding: 0 0 0 10px;
+}
+
+/* line 21, sass/style-rtl.scss */
+.printouttable td:first-child {
+  text-align: left;
+}
+
+/* line 25, sass/style-rtl.scss */
+.choice-5-pt-radio .survey-question-answer li, .list-radio-flexible .survey-question-answer li, .list-radio .survey-question-answer li, .list-with-comment .survey-question-answer li, .multiple-opt .survey-question-answer li, .multiple-opt-comments .survey-question-answer li, .multiple-short-txt .survey-question-answer li, .numeric-multi .survey-question-answer li, .yes-no .survey-question-answer li, .gender .survey-question-answer li {
+  list-style-type: none;
+  text-align: right;
+  margin: 0 0.5em 0.5em 0;
+}
+
+/* line 31, sass/style-rtl.scss */
+.choice-5-pt-radio .survey-question-answer li, .list-radio-flexible .survey-question-answer li, .list-radio .survey-question-answer li, .list-with-comment .survey-question-answer li {
+  margin-right: 2em;
+  margin-left: 0;
+}
+
+/* line 34, sass/style-rtl.scss */
+.choice-5-pt-radio .survey-question-answer ul, .yes-no .survey-question-answer ul, .gender .survey-question-answer ul {
+  text-align: right;
+}
+
+/* line 37, sass/style-rtl.scss */
+.choice-5-pt-radio .survey-question-answer ul li, .yes-no .survey-question-answer ul li, .gender .survey-question-answer ul li {
+  padding: 0 0 0 2em;
+}
+
+/* line 40, sass/style-rtl.scss */
+.date p.question {
+  margin-right: 1em;
+}
+
+/* line 43, sass/style-rtl.scss */
+.date p.tip, .numeric-multi p.tip, .numeric p.tip {
+  margin-right: 1.5em;
+}
+
+/* line 46, sass/style-rtl.scss */
+.numeric-multi p.tip.error, .numeric-multi input.tip.error {
+  text-align: right;
+}
+
+/* line 50, sass/style-rtl.scss */
+ul.cols-2 li, ul.cols-2-ul, ul.cols-3 li, ul.cols-3-ul, ul.cols-4 li, ul.cols-4-ul, ul.cols-5 li, ul.cols-5-ul, ul.cols-6 li, ul.cols-6-ul, ul.cols-7 li, ul.cols-7-ul, ul.cols-8 li, ul.cols-8-ul {
+  float: right;
+}
+
+/* line 53, sass/style-rtl.scss */
+.list-with-comment {
+  float: right;
+}
+
+/* line 56, sass/style-rtl.scss */
+.list-with-comment div.list {
+  float: right;
+}
+
+/* line 59, sass/style-rtl.scss */
+.list-with-comment p.select {
+  float: right;
+}
+
+/* line 62, sass/style-rtl.scss */
+.list-with-comment div.list p {
+  text-align: right;
+}
+
+/* line 65, sass/style-rtl.scss */
+.list-with-comment p.comment {
+  text-align: right;
+  float: right;
+}
+
+/* line 69, sass/style-rtl.scss */
+.ranking td.position {
+  text-align: left;
+}
+
+/* line 72, sass/style-rtl.scss */
+.numeric-multi ul.computed {
+  float: right;
+  padding-left: 2em;
+  padding-right: 0;
+}
+
+/* line 76, sass/style-rtl.scss */
+.multiple-opt-comments ul li span.option {
+  padding: 0.3em 1.8em 0 1em;
+}
+
+/* line 79, sass/style-rtl.scss */
+.multiple-short-txt ul li label, .numeric-multi ul li label {
+  padding: 0.3em 0 0 1em;
+}
+
+/* line 83, sass/style-rtl.scss */
+.multiple-opt-comments ul li span.comment, .multiple-short-txt ul li span, .numeric-multi ul li span {
+  padding: 0.3em 1em 0 0;
+}
+
+/* line 86, sass/style-rtl.scss */
+.numeric-multi div.multinum-slider {
+  float: right;
+}
+
+/* line 90, sass/style-rtl.scss */
+.numeric-multi ul.multiplenumerichelp li span, .numeric-multi ul.multiplenumerichelp.slider li span {
+  padding: 0 0.3em 0 0;
+}
+
+/* line 94, sass/style-rtl.scss */
+.text-short input, .text-short textarea, .text-long textarea, .text-huge textarea {
+  margin-right: 1em;
+  margin-left: 0;
+}
+
+/* line 97, sass/style-rtl.scss */
+#limesurvey table.question tbody th.answertext {
+  text-align: left;
+}
+
+/* line 101, sass/style-rtl.scss */
+#limesurvey table.question tbody th.answertextright {
+  text-align: right;
+}
+
+/* line 104, sass/style-rtl.scss */
+#tokenform label {
+  float: right;
+  text-align: left;
+}
+
+/* line 108, sass/style-rtl.scss */
+#tokenform img {
+  margin-left: 5px;
+}
+
+/* line 111, sass/style-rtl.scss */
+#tokenform input.submit {
+  margin-right: 18em;
+  margin-left: 0;
+}
+
+/* line 114, sass/style-rtl.scss */
+.outerframe.withindex, .withindex .outerframe {
+  margin-right: 1em;
+  margin-left: 26em;
+}
+
+/* line 118, sass/style-rtl.scss */
+#index {
+  left: 0;
+  border-right: 4px double #999;
+}
+
+/* line 122, sass/style-rtl.scss */
+#index h3 {
+  margin: 0.5em 0.5em 0 0;
+}
+
+/* line 126, sass/style-rtl.scss */
+#index .container .row {
+  text-align: right;
+}
+
+/* line 129, sass/style-rtl.scss */
+#index .container .row .hdr {
+  padding: 0 0 0 0.5em;
+}
+
+/* ranking questions */
+/* line 134, sass/style-rtl.scss */
+.dragDropTable .dragDropChoiceList li,
+.dragDropTable .dragDropRankList li {
+  text-align: right;
+}
+
+/* line 138, sass/style-rtl.scss */
+.dragDropTable .dragDropRankList li span.DDRnumberprefix,
+.dragDropTable .dragDropChoiceList li span.DDRnumberprefix {
+  float: right;
+}

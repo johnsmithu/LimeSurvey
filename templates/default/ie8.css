@@ -1,0 +1,5 @@
+/* The following styles are for IE 8 only*/
+/* line 3, sass/ie8.scss */
+.rank label {
+  line-height: 27px;
+}

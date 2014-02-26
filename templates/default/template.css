@@ -1,125 +1,88 @@
-/* Start reset CSS */
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td
-  {
-  margin: 0;
-  padding: 0;
-}
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-fieldset,img {
-  border: 0;
-}
-
-address,caption,cite,code,dfn,em,strong,th,var {
-  font-style: normal;
-  font-weight: normal;
-}
-
-ol,ul {
-  list-style: none;
-}
-
-caption,th {
-  text-align: left;
-}
-
-h1,h2,h3,h4,h5,h6 {
-  font-size: 12px;
-  font-weight: normal;
-}
-
-q:before,q:after {
-  content: '';
-}
-
-abbr,acronym {
-  border: 0;
-}
-
-/* End reset CSS */
 
 /*** Start jQuery UI Theme Styles ***/
 
-button.ui-button::-moz-focus-inner { /* Get rid of extra padding in focused button in FF */
-	border: 0;
-	padding: 0;
+button.ui-button::-moz-focus-inner {
+	border: 0; 
+	padding: 0;   /* Get rid of extra padding in focused button in FF */
+}
+
+.ui-widget {
+    font-family: inherit;
+    font-size: 1.0em;
 }
 
 .ui-corner-all {
     -moz-border-radius: 4px;
 }
 
-.ui-button {
-	position: relative;
-	padding: 0.1em 0 0.2em 0;
+.ui-button { 
+	position: relative; 
+	padding: 0.1em 0 0.1em 0; 
 	cursor: pointer;
-	font-family: Verdana, Geneva, sans-serif;
+	font-family: inherit;
 	font-size: 1.0em;
 	font-weight: normal;
 	line-height: normal;
 }
 
 button.ui-state-default,
-input.ui-state-default {
-	color: #2E648B;
+input.ui-state-default {  
+	color: #2E648B; 
 }
 
 button.ui-state-hover,
-input.ui-state-hover {
-	color: #0070A3;
+input.ui-state-hover {  
+	color: #0070A3; 
 }
 
 button.ui-state-active,
-input.ui-state-active {
-	color: #FFFFFF;
+input.ui-state-active {  
+	color: #FFFFFF; 
 }
 
-.ui-button-icon-only {
+.ui-button-icon-only { 
 	width: 2.2em; /* To make room for the icon, a width needs to be set here */
-}
+} 
 
-button.ui-button-icon-only {
+button.ui-button-icon-only { 
 	width: 2.4em; /* Button elements seem to need a little more width */
 }
 
-.ui-button-icons-only {
-	width: 3.4em;
-}
+.ui-button-icons-only { 
+	width: 3.4em; 
+} 
 
 button.ui-button-icons-only {
-	width: 3.7em;
+	width: 3.7em; 
 }
 
 /* Button text elements */
 .ui-button-text-only .ui-button-text {
-	padding: 0 1em;
+	padding: 0 1em; 
 }
 
-.ui-button-icon-only .ui-button-text,
+.ui-button-icon-only .ui-button-text, 
 .ui-button-icons-only .ui-button-text {
-	text-indent: -9999999px;
+	text-indent: -9999999px; 
 }
 
 .ui-button-text-icon-primary .ui-button-text {
-	padding: 0 0.7em 0 1.7em;
+	padding: 0 0.7em 0 1.7em; 
 	*padding: 0 20px; 
 }
 
 .ui-button-text-icon-secondary .ui-button-text {
-	padding: 0 1.7em 0 0.7em;
+	padding: 0 1.7em 0 0.7em; 
 	*padding: 0 20px; 
 }
 
 .ui-button-text-icons .ui-button-text {
-	padding: 0 1.7em;
+	padding: 0 1.7em; 
 }
 
 input.ui-button {
-	padding: 0 1em 0.1em 1em;  /* No icon support for input elements, provide padding by default */
+	padding: 0.1em 1em 0.1em 1em;  /* No icon support for input elements, provide padding by default */
 }
 
 /* Button icon element(s) */
@@ -130,500 +93,157 @@ input.ui-button {
 .ui-button-icons-only .ui-icon {
 	position: absolute;
 	top: 50%;
-	margin-top: -8px;
+	margin-top: -8px; 
 }
 
 .ui-button-icon-only .ui-icon {
-	left: 50%;
-	margin-left: -8px;
+	left: 50%; 
+	margin-left: -8px; 
 }
 
-.ui-button-text-icon-primary .ui-button-icon-primary,
-.ui-button-text-icons .ui-button-icon-primary,
+.ui-button-text-icon-primary .ui-button-icon-primary, 
+.ui-button-text-icons .ui-button-icon-primary, 
 .ui-button-icons-only .ui-button-icon-primary {
-	left: .4em;
+	left: .4em; 
 	*left: 2px;
 }
 
-.ui-button-text-icon-secondary .ui-button-icon-secondary,
-.ui-button-text-icons .ui-button-icon-secondary,
+.ui-button-text-icon-secondary .ui-button-icon-secondary, 
+.ui-button-text-icons .ui-button-icon-secondary, 
 .ui-button-icons-only .ui-button-icon-secondary {
-	right: .4em;
+	right: .4em; 
 	*right: 2px;
 }
 
-.ui-button-text-icons .ui-button-icon-secondary,
+.ui-button-text-icons .ui-button-icon-secondary, 
 .ui-button-icons-only .ui-button-icon-secondary {
-	right: .4em;
+	right: .4em; 
 	*right: 2px;
 }
 
 /* Button sets*/
 .ui-buttonset {
-	margin-right: 7px;
+	margin-right: 7px; 
 }
 
 .ui-buttonset .ui-button {
 	margin-left: 0;
-	margin-right: -.3em;
-}
-
-/* Workarounds for .odd pages */
-
-.page-odd .ui-state-default,
-.page-odd .ui-widget-content .ui-state-default {
-    background: url(images/ui-bg_glass_75_e6e6e6_1x400.png) repeat-x 50% 50% #E6E6E6;
-    border: 1px solid #D3D3D3;
-    color: #555555;
-}
-
-.page-odd .ui-state-hover,
-.page-odd .ui-widget-content .ui-state-hover,
-.page-odd .ui-state-focus,
-.page-odd .ui-widget-content .ui-state-focus {
-    background: url(images/ui-bg_glass_75_dadada_1x400.png) repeat-x scroll 50% 50% #DADADA;
-    border: 1px solid #999999;
-    color: #212121;
-}
-
-.page-odd .ui-state-active, .ui-widget-content .ui-state-active,
-.page-odd .ui-widget-header .ui-state-active {
-	background: #ffffff url(images/ui-bg_glass_65_ffffff_1x400.png) 50% 50% repeat-x;
-	border: 1px solid #aaaaaa;
-	color: #212121;
-}
-
-.page-odd .ui-state-default .ui-icon {
-    background-image: url(images/ui-icons_888888_256x240.png);
-}
-
-.page-odd .ui-state-hover .ui-icon,
-.page-odd .ui-state-focus .ui-icon {
-    background-image: url(images/ui-icons_454545_256x240.png);
+	margin-right: -.3em; 
 }
 
 /*** End jQuery UI Theme Styles ***/
 
-body.default {
-  background-color: #FFF;
-  font-size: 13px;
-  line-height: 120%;
-  font-family: Verdana, Arial, Helvetica, sans-serif;
-  color: #1d2d45;
-}
-
-ul {
-  list-style: disc inside;
-}
-
-ol {
-  list-style: decimal inside;
-}
-
-h1 {
-  font-size: 16px;
-  font-weight: bold;
-  color: #328639;
-  padding-top: 15px;
-}
-
-h2 {
-  font-size: 12px;
-  font-weight: bold;
-  color: #328639;
-  padding-top: 5px;
-}
-
-h3 {
-  font-size: 13px;
-  font-weight: bold;
-  color: #1D2D45;
-  padding-bottom: 10px;
-}
-
-a:link,a:visited {
-  color: #819d26;
-  text-decoration: none;
-}
-
-.success {
-  color: #00dd00;
-  font-weight: bold;
-}
-
-.answertext,.answer {
+.outerframe.answertextright {
   text-align: left;
 }
 
 .array1 {
-  font-family: verdana;
-  font-size: 11px;
+  background-color: #abc;
   text-align: center;
-  background-color: #fff;
 }
 
 .array2 {
-  font-family: verdana;
-  font-size: 11px;
+  background-color: #EFEFEF;
   text-align: center;
-  background-color: #eee;
-}
-
-.arraycaptionleft {
-  text-align: right;
-}
-
-/* Save All button */
-.saveall {
-  font-size: 10px;
-  margin: 5px;
-}
-
-/* Clear All button */
-.clearall {
-  font-size: 10px;
-  margin: 5px;
-}
-
-/* Navigation buttons */
-button.submit {
-  margin: 5px;
 }
 
 .asterisk {display:none}
 .mandatory .asterisk {display:inline;}
 .asterisk {
   color: red;
-  font-size: 9px;
+  font-size: 9pt;
   font-family: verdana;
   padding-right:1em;
 }
-
-.hide {
-  font-weight: normal;
-  position: absolute;
-  top: -9999px;
-  left: -9999px;
-}
-
-.printouttable {
-  margin:1em auto;
-}
-
-.printouttable th {
-  text-align: center;
-}
-
-
-.printouttable td {
-  border-color: #ddf #ddf #ddf #ddf;
-  border-style: solid;
-  border-width: 1px;
-  padding:0.1em 1em 0.1em 0.5em;
-}
-
-.printouttable td:first-child {
-  font-weight: 700;
-  text-align: right;
-  padding-right: 5px;
-  padding-left: 5px;
-
-}
-.printouttable .printanswersquestion td{
-  background-color:#F7F8FF;
-}
-
-.printouttable .printanswersquestionhead td{
-  text-align: left;
-  background-color:#ddf;
-}
-
-.printouttable .printanswersgroup td{
-  text-align: center;
-  font-weight:bold;
-  padding-top:1em;
-}
-
-.printouttitle {
-  padding: 10px 10px 0 10px;
-  font-size: 18px;
-}
-
-.surveytitle {
-  font-size: 12px;
-  height: 18px;
-}
-
-.surveytitle:hover {
-  text-decoration: underline;
-  color: #819d26;
-}
-
-/* Format the language changer combobox on the public homepage */
-.languagechanger {
-
-}
-
-/* Basic formatting for the four keyparts of an question */
-
-span.questionhelp {
-}
-
 .showqnumcode-X .qnumcode {
 	display:none;
 }
-span.qnumcode {
-	font-style:italic;
-}
-
-td.questiontext {
-  font-family: verdana;
-  font-size: 12px;
-  font-weight: bold;
-  background-color: #EEF6FF;
-  text-align: left;
-  padding: 0.5em 1em;
-}
-
-.page-odd td.questiontext {
-  background-color: #EFFFEE;
-}
-
-.navigator-table {
-  background-color: #EEF6FF;
-  text-align: center;
-  width: 100%;
-}
-
-.page-odd .navigator-table {
-  background-color: #EFFFEE;
-}
-
-td.page-title {
-  text-align: center;
-  background-color: #EEF6FF;
-}
-
-.page-odd td.page-title {
-  background-color: #EFFFEE;
-}
-
-table.question-group {
-  width: 100%;
-  text-align: center;
-  background-color: #d2e0f2;
-  border: 0;
-  border-collapse:collapse;
-  border-color: #111111;
-}
-
-.page-odd table.question-group {
-  background-color: #D2F2D3;
-}
-
-td.answer {
-  padding: 0.5em 1.5em;
-}
-
-td.survey-question-help {
-  font-size: 10px;
-  background-color: #EEF6FF;
-  padding-left: 1em;
-}
-
-.page-odd td.survey-question-help {
-  background-color: #EFFFEE;
-}
-
-td.survey-question-help img {
-  margin: 4px 4px 4px 0;
-  padding-right: 5px;
-  vertical-align: middle;
-}
-
-/* End formatting for the four keyparts of an question */
-
-.warning {
-    display:block;
-    }
-.error,.errormandatory,.warningjs {
-  color: red;
-}
-.errormandatory,.warningjs {
-  font-size: 12px;
-  font-weight: 700;
-}
-
-table.question {
-  margin: 0 auto;
-}
-
-table.question tr.array1:hover,table.question tr.array2:hover {
-  background-color: #A7A9D1;
-}
-
-.welcome-table {
-  margin: 0 auto;
-  width: 100%;
-  border: 0 none;
-  border-collapse: collapse;
-}
-
-.welcome-table td {
-}
-
-td.survey-description {
-	text-align: center;
-	background-color: #EEF6FF;
-	padding-bottom: 20px;
-}
-
-.page-odd td.survey-description {
-    background-color: #EFFFEE;
-}
-
-span.surveydescription {
-}
-
-td.survey-welcome {
-	text-align: center;
-	padding-top: 20px;
-}
-
-span.surveywelcome {
-}
-
-.x-questions {
-	font-style: italic;
-}
-
-.navigator-table {
-	width: 100%;
-	margin: 0;
-	background-color: #EEF6FF;
-	border: 0 none;
-	border-collapse: collapse;
-}
-
-.clear-all {
-	text-align: right;
-	width: 30%;
-}
-
-.save-all {
-	text-align: left;
-	width: 30%;
-}
-
-.submit-buttons {
-	text-align: center;
-	width: 40%;
-}
-
-.survey-header-table {
-	width: 100%;
-	margin: 0;
-	border: 0 none;
-	border-collapse: collapse;
-	margin-bottom: 2px;
-}
-
-.survey-header-table td.survey-description p {
-	font-size: 10px;
-}
 
 .graph {
-	background-color: #D2E0F2;
+  border: solid;
+  background-color: #fff;
+  border-color: #777;
+  border-width: 2px;
 }
 
-.language-changer {
-	text-align: center;
+.innergraph {
+  background-color: #EFEFEF;
+  color: #777;
+  font-family: arial;
+  font-size: 8pt;
+  direction: ltr;
 }
 
-select.languagechanger {
-	margin-top: 3px;
+.submit,.clearall,.saveall {
+  background-color: #ace;
+  font-size: 9pt;
+  font-family: arial;
+  border: 3px double #ddd;
+  cursor: pointer;
 }
 
-table.group {
-	width: 100%;
-	margin: 0 0 2px 0;
-	border: 0 none;
-	border-collapse: collapse;
-	background-color: #D2E0F2;
+.saveall {
+  margin-bottom: 10px;
 }
 
-.page-odd table.group {
-    background-color: #D2F2D3;
+.rank,.rank td {
+  font-size: 10px;
+  background-color: #f5f9f9;
 }
 
-.group-name {
-	font-size: small;
-	font-family:Verdana, Arial, Helvetica, sans-serif;
+select.select {
+  background-color: #EFEFEF;
+  color: #555;
+  font-family: arial;
+  font-size: 9pt;
+}
+
+.textarea {
+  color: #666;
+  font-size: 12px;
+  font-family: arial;
+  width: 90%;
+}
+
+.warningjs {
+  font-size: 12px;
+  font-weight: 700;
+  color: red;
+}
+
+.innergraph img {
+  height: 12px;
+  vertical-align: top;
+}
+
+.innergraph table {
+  height: 12px;
+  border: 1px solid #000;
+  table-layout: fixed !important;
+}
+
+.innergraph td {
+  height: 12px;
+}
+
+div.assessment-heading {
 	font-weight: bold;
-}
-
-.group-description {
-	font-size: small;
-	font-family:Verdana, Arial, Helvetica, sans-serif;
-}
-
-.question-wrapper {
-	width: 75%;
-	margin: 0 auto 10px auto;
-	border: 0 none;
-	border-collapse: collapse;
-	background-color: #FFFFFF;
-}
-
-.assessment-table {
-	margin: 0 auto;
-	width: 90%;
-	border-collapse: collapse;
-	border: 1px solid #EEEEEE;
-}
-
-.assessment-table td {
-	padding: 3px;
-}
-
-.assessment-heading {
-	background-color: #EEF6FF;
-	text-align: center;
-	font-size:small;
-	font-weight: bold;
-	border-bottom: 1px solid #EEEEEE;
-}
-
-.assessments-container {
 }
 .assessments td{
 	text-align: center;
 }
-.completed-table {
-	margin: 0 auto;
-	width: 90%;
-	border-collapse: collapse;
-	border: 1px solid #EEEEEE;
-	background-color: #EEF6FF;
+.assessment-heading,
+.survey-completed {
+  text-align: center;
+  width: 75%;
+  border: 1px solid #111;
+  margin: 0 auto;
+  padding: 5px;
 }
 
-.completed-table td {
-}
-
-.completed-text {
-	text-align: center;
-	font-size:small;
-}
-
-table.clearall-result {
-	margin: 0 auto;
-	width: 60%;
-}
-
-table.clearall-result td {
-	text-align: center;
-	font-size:small;
-	font-family:Arial, Helvetica, sans-serif;
+.survey-cleared {
+  text-align: center;
+  margin: 0 auto;
 }
 
 .warning-text {
@@ -631,17 +251,11 @@ table.clearall-result td {
 	font-weight: bold;
 }
 
-.register-table {
-	margin: 0 auto;
-	width: 100%;
-	border-collapse: collapse;
-}
-
-.register-table td {
+.register-wrapper {
 	text-align: center;
 }
 
-.register-message-1, strong {
+.register-message-1 {
 	font-weight: bold;
 }
 
@@ -649,44 +263,41 @@ table.clearall-result td {
 }
 
 .register-form {
-	margin: 10px 0 10px 0;
+	margin-bottom: 10px;
 }
 
 .register-form table.register {
 	margin: 0 auto 0 auto;
+    width: auto;
 }
 
-#loadtable,
-#savetable {
-	margin: 0 auto;
-	width: 100%;
-	border-collapse: collapse;
+.register-form table.register td {
+  padding: 2px;
 }
 
-#loadtable td,#savetable td {
-    padding-top: 5px;
-    padding-left: 3px;
+.survey-load {
+	text-align: center;
 }
 
-#loadbutton,#savebutton {
-    padding: 0 10px;
-}
-
-.load-error,
-.save-error {
-	color:#FF0000;
+.load-survey,
+.save-survey {
+	text-align: center;
+	padding: 10px 0;
 }
 
 .load-heading,
 .save-heading {
-	background-color: #EEF6FF;
-	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
 }
 
 .load-message {
 }
 
-.load-form {
+.load-form table,
+.save-form table {
+	margin: 0 auto 0 auto;
+    width: auto;
 }
 
 .return-to-survey {
@@ -698,54 +309,303 @@ table.clearall-result td {
 .save-form{
 }
 
-.survey-list-table {
-	width: 100%;
-	margin: 0 auto;
-	border-collapse: collapse;
-	background-color: #FFFFFF;
+.survey-list-wrapper {
+	margin:0;
+	padding:20px 10px;
+	text-align:center;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 
-.survey-list-table td {
-	text-align: center;
-}
-
-.survey-list-table .site-name {
-}
-
-.survey-list-table .survey-list-heading {
+.survey-list-heading {
 	font-weight: bold;
-	padding-top: 20px;
 }
 
-.survey-list-table .survey-list {
-	padding:20px 0;
+
+.survey-list-heading h1 {
+	font-size: large;
+	color: #328639;
 }
 
-.survey-list-table .survey-list ul {
+.survey-list {
+}
+
+.survey-list ul {
 	padding: 0;
+	margin-left: 0;
 }
 
-.survey-list-table .survey-list li {
+.survey-list li {
 	list-style: none;
 	padding-bottom: 5px;
 }
 
-.survey-list-table .survey-contact {
-}
-
-.survey-list-table .language-changer {
+.survey-contact {
 	padding-bottom: 10px;
-	height: 100px;
 }
 
-.survey-list-table .language-changer p {
-	padding:20px 0;
+.language-changer {
 }
 
-.survey-list-table .language-changer a {
+.language-changer a {
 	color: #000000;
+	font-size: 0.9em;
 }
 
+.survey-groupdescription {
+  background: #eee;
+  font-weight: 400;
+  border-bottom: 1px solid #ddd;
+  color: #000;
+  margin: 0 0 10px;
+  padding: 0 0 2px 3px;
+}
+
+.survey-groupname {
+  background: #eee;
+  font-weight: 700;
+  color: #009;
+  font-size: 16px;
+  border-top: 1px solid #ddd;
+  margin: 10px 0 0;
+  padding: 2px 0 0 3px;
+}
+
+.survey-main {
+  font-size: 13px;
+  background: #F9F9F9;
+  border: 4px double #999;
+  padding: 5px;
+}
+
+.survey-navigator {
+  margin: 0 0 10px;
+  text-align: center;
+}
+
+.survey-survey-description {
+  margin: 5px 0 10px;
+}
+
+.survey-survey-percent {
+  padding: 0.2em 0;
+}
+
+#progress-graph {
+  line-height: 1.5em;
+  width: 17em;
+  font-size: 90%;
+  font-family: verdana, arial, helvetica, sans-serif;
+  color: rgb(119, 119, 119);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.2em;
+  padding: 0.6em 0.5em 0.4em 1em;
+  text-align: left;
+  background-color: #fff;
+  border: 2px solid rgb(128, 128, 128);
+}
+
+.hide {
+  font-weight: normal;
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+#progress-graph div.zero {
+  width: 2.6em;
+  margin-right: 0;
+}
+
+#progress-graph div.graph {
+  width: 10em;
+  height: 1.5em;
+  border: 1px solid maroon;
+  margin-top: -1.7em;
+  margin-left: 2.6em;
+  margin-right: 0;
+}
+
+#progress-graph div.cent {
+  width: 3em;
+  margin-top: -1.5em;
+  margin-left: 13.6em;
+  margin-right: 0;
+}
+
+.question {
+  background-color: #f5f9f9;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #262C4C;
+}
+
+.question td {
+  font-size: 10px;
+}
+
+.questionhelp {
+  font-size: 10px;
+  font-style: italic;
+}
+
+.questiontext {
+  font-family: verdana;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.text {
+  color: #777;
+  font-size: 12px;
+  font-family: arial;
+}
+
+.answertext {
+  font-family: arial;
+  color: #000;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.survey-question {
+  border: 1px solid #ddd;
+  background-color: #f5f9f9;
+  margin: 0 0 0 5px;
+  padding: 0 0 0 3px;
+}
+
+.survey-question-answer {
+  font-weight: 400;
+}
+
+.survey-question-help {
+  line-height: 24px;
+  margin: 2px 0 0 2px;
+  clear: both;
+}
+
+.survey-question-help img {
+  padding: 0 10px 0 0;
+}
+
+.survey-question-space {
+  height: 5px;
+}
+
+.survey-question-text {
+  display: block;
+  width: 97%;
+  font-weight: 700;
+}
+
+.survey-welcome {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  background-color: #f5f9f9;
+  padding: 5px;
+}
+
+.numquestions {
+  font-size: 11px;
+  color: green;
+}
+
+table,tr,td,th {
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  /*
+text-align:center;
+*/
+}
+
+.grayboxheader {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  color: #000;
+  text-align: center;
+}
+
+.grayboxheader .center-cell {
+	background: transparent url(box_bg.gif) 0 0 repeat-x;
+}
+
+.grayboxfont {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #424142;
+}
+
+.percentage {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  color: #000;
+}
+
+.warning{
+    display:block;
+}
+.error {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+  color: #CB0404;
+}
+
+.printouttable td {
+  border-color: #fff #fff #ddf;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.printouttable td:first-child {
+  background-color: #ddf;
+  font-weight: 700;
+  text-align: right;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.printouttitle {
+  padding-right: 5px;
+  padding-left: 5px;
+  font-size: 18px;
+}
+
+.surveytitle {
+  font-size: 1.2em;
+  height: 1.5em;
+}
+
+.languagechanger {
+  font-size: 1em;
+}
+
+.survey-survey-language.welcome-page select {
+	margin: 7px 0;
+}
+
+table,.printouttable {
+  width: 100%;
+}
+
+table.question {
+  width: 100%;
+}
+
+table.question tr.array1:hover,table.question tr.array2:hover {
+  background-color: #A7A9D1;
+}
+
+.errormandatory,.warningjs {
+  font-size: 12px;
+  font-weight: 700;
+  color: red;
+}
 
 /* -------------------------------------------------
    START: Question styles  ------------------------- */
@@ -777,30 +637,31 @@ table.clearall-result td {
 ,.array-5-pt
 ,.array-10-pt
 ,.array-yes-uncertain-no
-,.array-increase-same-decrease
-,.array-flexible-row
-,.array-flexible-column
-,.slider
-,.array-multi-flexi
+,.array-increase-same-decrease 
+,.array-flexible-row 
+,.array-flexible-column 
+,.slider 
+,.array-multi-flexi 
 ,.array-multi-flexi-text
-,.array-flexible-duel-scale
+,.array-flexible-duel-scale 
 */ /* - - -  - - -  - - -  - - - - - -  - - -  - - - -
    START: General list styles - - -  - - -  - - - - */
-.choice-5-pt-radio .answer ul,.list-radio-flexible .answer ul,.list-radio .answer ul,.list-with-comment .answer ul,.multiple-opt .answer ul,.multiple-opt-comments .answer ul,.multiple-short-txt .answer ul,.numeric-multi .answer ul,.yes-no .answer ul,.gender .answer ul
+.choice-5-pt-radio .survey-question-answer ul,.list-radio-flexible .survey-question-answer ul,.list-radio .survey-question-answer ul,.list-with-comment .survey-question-answer ul,.multiple-opt .survey-question-answer ul,.multiple-opt-comments .survey-question-answer ul,.multiple-short-txt .survey-question-answer ul,.numeric-multi .survey-question-answer ul,.yes-no .survey-question-answer ul,.gender .survey-question-answer ul
   {
-  margin-left: 0%;
-  padding-left: 0%;
+  margin-left: 0;margin-right:0;
+  padding-left: 0;padding-right:0;
 }
 
-.choice-5-pt-radio .answer li,.list-radio-flexible .answer li,.list-radio .answer li,.list-with-comment .answer li,.multiple-opt .answer li,.multiple-opt-comments .answer li,.multiple-short-txt .answer li,.numeric-multi .answer li,.yes-no .answer li,.gender .answer li
+.choice-5-pt-radio .survey-question-answer li,.list-radio-flexible .survey-question-answer li,.list-radio .survey-question-answer li,.list-with-comment .survey-question-answer li,.multiple-opt .survey-question-answer li,.multiple-opt-comments .survey-question-answer li,.multiple-short-txt .survey-question-answer li,.numeric-multi .survey-question-answer li,.yes-no .survey-question-answer li,.gender .survey-question-answer li
   {
   list-style-type: none;
   text-align: left;
-  margin: 0% 0% 0.5em 0.5em;
+  margin: 0 0 0.5em 0.5em;
 }
 
-.outerframe.withindex div.missing td.answer {
-  background: #FBFBEF;
+.choice-5-pt-radio .survey-question-answer li,.list-radio-flexible .survey-question-answer li {
+  margin-left: 2em;
+  text-indent: -1.8em;
 }
 
 /* END:  General list styles - - - -  - - -  - - - -
@@ -808,17 +669,16 @@ table.clearall-result td {
   /* STYLES NOT YET DEFINED - - - - -
 .boilerplate {}
 */
-.choice-5-pt-radio .answer ul,.yes-no .answer ul,.gender .answer ul {
+.choice-5-pt-radio .survey-question-answer ul,.yes-no .survey-question-answer ul,.gender .survey-question-answer ul {
   text-align: left;
-  margin-top: 0.5em;
-  margin-left: 0%;
-  padding-left: 0%;
+  margin-left: 0;margin-right:0;
+  padding-left: 0;padding-right:0;
 }
 
-.choice-5-pt-radio .answer ul li,.yes-no .answer ul li,.gender .answer ul li {
+.choice-5-pt-radio .survey-question-answer ul li,.yes-no .survey-question-answer ul li,.gender .survey-question-answer ul li {
   display: inline;
-  padding: 0% 2em 0% 0%;
-  margin-left: 0%;
+  padding: 0 2em 0 0;
+  margin-left: 0;margin-right:0;
 }
 
 /* STYLES NOT YET DEFINED - - - - -
@@ -828,19 +688,21 @@ table.clearall-result td {
   margin-left: 1em;
 }
 
-.date p.question select.day {
+.date p.question select.day {  
 }
 
-.date p.question select.month {
-
+.date p.question select.month {  
 }
 
-.date p.question select.year {
-
+.date p.question select.year {  
 }
 
 #ui-datepicker-div {
 	z-index: 2 !important;
+}
+
+#ui-datepicker-div select {
+	font-size: 0.9em;
 }
 
 .date p.tip,.numeric-multi p.tip,.numeric p.tip {
@@ -851,79 +713,57 @@ table.clearall-result td {
 }
 
 .numeric p.question {
+  font-size: 80%;
+  font-weight: bold;
   margin-left: 1em;
 }
 
-.numeric-multi p.tip.problem {
-  color: #f30;
+.numeric-multi p.tip.error,.numeric-multi input.tip.error {
+  color: #f70;
   font-weight: bold;
+  text-align: left;
 }
 
-.numeric-multi input.tip.problem {
-  background-color: #f30;
-  border: 2px solid #7F9DB9;
-  font-weight: bold;
-  color: #fff;
-}
-
-.numeric-multi p.tip.good {
+.numeric-multi p.tip.good,.numeric-multi input.tip.good {
   color: #090;
   font-weight: bold;
-}
-
-.numeric-multi input.tip.good {
-  background-color: #090;
-  border: 2px solid #7F9DB9;
-  font-weight: bold;
-  color: #fff;
 }
 
 /* DEFINED ABOVE UNDER "General list styles" - - - - -
 .list-radio-flexible
 .list-radio
 */
-.list-radio .answer li label,
-.list-with-comment .answer li label {
+.list-radio .survey-question-answer li label,
+.list-with-comment .survey-question-answer li label {
   display: inline-block;
-  *display: inline;
+  *display:inline;
   width: 85%;
 }
-
-.list-radio .answer li.other-item label,
-.list-with-comment .answer li.other-item label {
+.list-radio .survey-question-answer li.other-item label,
+.list-with-comment .survey-question-answer li.other-item label {
   width: auto;
 }
 
-.list-radio .answer li input,
-.list-with-comment .answer li input {
+.list-radio .survey-question-answer li input.radio,
+.list-with-comment .survey-question-answer li input.radio {
   vertical-align: top !important;
   margin-top: 2px;
-  *margin-top: -2px; /* IE7 and below */
+  margin-top: -2px\9; /* IE9 and below */
 }
-ul.colstyle-css,table.colstyle-table
-{
+
+ul.cols-2,table.cols-2,ul.cols-3,table.cols-3,ul.cols-4,table.cols-4,ul.cols-5,table.cols-5,ul.cols-6,table.cols-6,ul.cols-7,table.cols-7,ul.cols-8,table.cols-8
+  {
   width: 98%;
-  margin: 0% auto 0% auto;
+  margin: 0 auto;
 }
-ul.colstyle-css li,ul.colstyle-ul
-{
+
+ul.cols-2 li,ul.cols-2-ul,ul.cols-3 li,ul.cols-3-ul,ul.cols-4 li,ul.cols-4-ul,ul.cols-5 li,ul.cols-5-ul,ul.cols-6 li,ul.cols-6-ul,ul.cols-7 li,ul.cols-7-ul,ul.cols-8 li,ul.cols-8-ul
+  {
   float: left;
-  width: 100%;
-  padding: 0;
+  padding: 0 0.5em;
   white-space: normal
 }
-/* deactivate display:inline-block for col style */
-.multiple-opt .answer ul.colstyle-css li label,.multiple-opt .answer ul.colstyle-ul li label,.multiple-opt .answer table.colstyle-table li label,
-.multiple-opt-comments .answer ul.colstyle-css li label,.multiple-opt-comments .answer ul.colstyle-ul li label,.multiple-opt-comments .answer table.colstyle-table li label
-{
-    display: inline;
-}
-.list-radio .answer ul.colstyle-css li label,.list-radio .answer ul.colstyle-ul li label,.list-radio .answer table.colstyle-table li label,
-.list-with-comment .answer ul.colstyle-css li label,.list-with-comment .answer ul.colstyle-ul li label,.list-with-comment .answer table.colstyle-table li label
-{
-    display: inline;
-}
-/* multi column width */
+
 ul.cols-2 li,ul.cols-2-ul,table.cols-2 td {
   width: 48%;
 }
@@ -959,29 +799,34 @@ ul.cols-8 li,ul.cols-8-ul,table.cols-8 td {
 /* STYLES NOT YET DEFINED - - - - -
 .list-dropdown {}
 */
+.list-with-comment {
+  float: left;
+  width: 100%;
+}
+
 .list-with-comment div.list {
   width: 47%;
   float: left;
-  padding: 0.5em 0.5em 0.5em 0%;
+  padding: 0.5em;
 }
 
 .list-with-comment p.select {
   width: 47%;
   float: left;
   padding: 0.5em;
-  margin: 0%;
+  margin: 0;
 }
 .list-with-comment p.select select{
   max-width: 99%;
 }
 
 .list-with-comment div.list p {
-  margin: 0% 0% 0% 1.1em;
+  margin: 0;
   text-align: left;
 }
 
 .list-with-comment p.comment {
-  margin: 0%;
+  margin: 0;
   padding: 0.5em;
   text-align: left;
   float: left;
@@ -992,37 +837,73 @@ ul.cols-8 li,ul.cols-8-ul,table.cols-8 td {
   width: 100%;
 }
 
+.ranking td.position {
+  text-align: right;
+}
+
+table.rank td.helptext {
+	font-size:10px;
+	font-style:italic;
+	padding: 3px;
+}
+
+
+/* this is the color of the backgrounds/drop areas of the columns */
+.dragDropTable .dragDropChoiceList,
+.dragDropTable .dragDropRankList {
+	background: #E8E8E8;
+	border: 1px solid #C9C9C9;
+}
+
+/* the draggable itself */
+.dragDropTable .dragDropChoiceList li,
+.dragDropTable .dragDropRankList li {
+	background: white;
+	border: 1px solid #C9C9C9;
+	text-align: left;
+}
+
+/* placeholder */
+.dragDropTable .dragDropRankList li.ui-sortable-placeholder,
+.dragDropTable .dragDropChoiceList li.ui-sortable-placeholder {
+	background: #EDFBFF;
+	border-color: #66DEFF;
+	border-style: solid;
+}
+
 /* DEFINED ABOVE UNDER "General list styles" - - - - -
 .multiple-opt
 */
-.multiple-opt .answer li input, .multiple-opt-comments .answer li .option input {
+.multiple-opt .survey-question-answer li input.checkbox, .multiple-opt-comments .survey-question-answer li .option input.checkbox {
   vertical-align: top !important;
   margin-top: 2px;
-  *margin-top: -2px; /* IE7 and below */
+  margin-top: -2px\9; /* IE9 and below */
 }
-.multiple-opt .answer li label, .multiple-opt-comments .answer li .option label {
+
+.multiple-opt .survey-question-answer li label, .multiple-opt-comments .survey-question-answer li .option label {
   display: inline-block;
-  *display: inline;
+  *display:inline;
   width: 90%;
 }
-.multiple-opt .answer li.other-item label {
+.multiple-opt .survey-question-answer li.other-item label, .multiple-opt-comments .survey-question-answer li.other-item .option label {
   width: auto;
 }
 
+
 /* The following styles only apply to modern (relatively) complete CSS2 compliant browsers. (Not less than IE 8) */
+.multiple-opt-comments td.answer,.multiple-short-txt td.answer,.numeric-multi td.answer
+  {
+  
+}
+
 .multiple-opt-comments ul,.multiple-short-txt ul,.numeric-multi ul {
   display: table;
-  padding: 0%;
+  padding: 0;
   margin: 1em;
 }
 
-.numeric-multi .answer ul {
-  margin: 0% 1em 1.5em 1em;
-}
-
-.numeric-multi .answer ul input {
-  width: 5em;
-  padding: 0px;
+.numeric-multi ul {
+  margin: 0 1em 1.5em 1em;
 }
 
 .numeric-multi ul.computed {
@@ -1040,31 +921,35 @@ ul.cols-8 li,ul.cols-8-ul,table.cols-8 td {
 }
 
 .multiple-opt-comments ul li span.option {
+   padding: 0.5em 0 0.5em 0;
   display: table-cell;
   vertical-align: baseline;
 }
-
+.multiple-opt-comments ul li .comment {
+  vertical-align: top;
+}
 .multiple-short-txt ul li label,.numeric-multi ul li label {
-  padding: 0.3em 1em 0% 0%;
+  padding: 0.3em 1em 0 0;
   display: table-cell;
   vertical-align: baseline;
 }
 
-.numeric-multi ul.computed li label,.numeric-multi ul.slider.computed li label
-  {
-  padding-right: 0%;
+.numeric-multi ul.computed li label
+.numeric-multi ul.slider.computed li label {
+  padding-right: 0;
 }
 
 .multiple-opt-comments ul li span.comment,.multiple-short-txt ul li span,.numeric-multi ul li span
   {
-  padding: 0.3em 0% 0% 1em;
+  padding: 0.3em 0 0 1em;
   display: table-cell;
   vertical-align: baseline;
+  font-size: 80%;
   white-space: nowrap;
 }
-
-.multiple-opt-comments ul li span {
-  padding: 0.3em 1em 0% 0%;
+.multiple-opt-comments ul li span.comment
+  {
+  vertical-align: top;
 }
 
 .numeric-multi div.multinum-slider {
@@ -1082,6 +967,7 @@ ul.cols-8 li,ul.cols-8-ul,table.cols-8 td {
 .numeric-multi li.multiplenumerichelp span span {
 	display: inline;
 	padding: 0;
+	font-size: 125%;
 }
 
 .text-short input,.text-short textarea,.text-long textarea,.text-huge textarea
@@ -1089,37 +975,28 @@ ul.cols-8 li,ul.cols-8-ul,table.cols-8 td {
   margin-left: 1em;
 }
 
+.text-huge textarea {
+  display: block;
+}
+
+/* STYLES NOT YET DEFINED - - - - -
+.yes-no {}
+.gender {}
+*/
 #limesurvey table.question thead th,
-#limesurvey table.question .repeat th
-  {
-  text-align: center;
+#limesurvey table.question thead td,
+#limesurvey table.question .repeat th,
+#limesurvey table.question .repeat td {
   vertical-align: bottom;
-  font-weight: 600 !important;
+  text-align: center;
+  background-color: #F5F9F9;
 }
 
-#limesurvey table.question thead th,
-#limesurvey table.question thead td {
-  background-color: #FFFFFF;
-}
-
-#limesurvey .array-flexible-duel-scale table.question tr.repeat {
-	background-color: #F9F9F9;
-}
-
-#limesurvey .array-flexible-duel-scale table.question .header_answer_text,
-#limesurvey .array-flexible-duel-scale table.question tr.repeat th.header_answer_text,
-#limesurvey .array-flexible-duel-scale table.question .header_separator,
-#limesurvey .array-flexible-duel-scale table.question .repeat .header_separator,
-#limesurvey .array-flexible-duel-scale table.question .header_answer_text_right {
-	background-color: #FFFFFF;
-}
-
-#limesurvey .answer table.question tbody td {
+#limesurvey table.question .answer tbody td {
   text-align: center;
 }
 
-#limesurvey table.question tbody th.answertext,#limesurvey table.question tbody th.arraycaptionleft
-  {
+#limesurvey table.question tbody th.answertext {
   text-align: right;
   font-weight: normal;
 }
@@ -1135,22 +1012,7 @@ ul.cols-8 li,ul.cols-8-ul,table.cols-8 td {
 
 .boilerplate td td,.numeric td td,.choice-5-pt-radio td td,.yes-no td td,.gender td td,.date td td,.numeric-multi td td,.numeric td td,.list-with-comment td td,.list-dropdown-flexible td td,.ranking td td,.numeric-multi td td,.language td td,.multiple-opt-comments td td,.multiple-short-txt td td,.text-short td td,.text-long td td,.text-huge td td,.numeric-multi td td,.array-5-pt td,.array-10-pt td,.array-yes-uncertain-no td,.array-increase-same-decrease td,.array-flexible-row td,.array-flexible-column td,.array-multi-flexi td,.array-multi-flexi-text td,.array-flexible-duel-scale td
   {
-  text-align: left;
-}
-
-.ranking select {
-  min-width: 140px;
-}
-
-.ranking option {
-  padding-top: 1px;
-  padding-bottom: 1px;
-}
-
-
-.choice-5-pt-radio .answer li {
-  display: inline;
-  margin-left: 0.5em;
+  clear: both;
 }
 
 /** Progress bar **/
@@ -1163,21 +1025,30 @@ ul.cols-8 li,ul.cols-8-ul,table.cols-8 td {
   border: 1px solid #999999;
 }
 
-.page-odd td.graph {
-  background-color: #D2F2D3;
-}
-
 /** UI Slider **/
 .numeric-multi label.slider-label {
   display: table-cell;
   width: auto !important;
-  padding: 0 1em 0.2em 0;
-  margin-top: 1.3em;
+  padding: 0 1em 0 0;
+  margin-top: 1.4em;
   vertical-align: middle;
 }
 
-.numeric-multi .ui-slider-handle {
-    top: -0.35em;
+.ui-slider .ui-slider-handle {
+    height: 1.1em;
+    width: 1.1em;
+}
+
+.multinum-slider .ui-state-default {
+	background: none #AACCEE;
+	border:1px solid #999999;
+}
+
+.multinum-slider .ui-widget-content {
+	background: none #F9F9F9;
+	border:1px solid #999999;
+	color: #222222;
+	font-family: inherit;
 }
 
 .ui-slider-1 {
@@ -1200,10 +1071,11 @@ ul.cols-8 li,ul.cols-8-ul,table.cols-8 td {
   width: 100px;
   overflow: hidden;
   position: absolute;
-  top: -20px;
+  top: -19px;
   margin-left: -3px;
+  font-family: 'Arial';
+  font-size: 9pt;
   color: #284a6e;
-  font-size: 90%;
   font-weight: bold;
   text-align: left;
 }
@@ -1212,8 +1084,7 @@ ul.cols-8 li,ul.cols-8-ul,table.cols-8 td {
   float: left;
   width: 50px;
   margin: 15px 0 0 -0.3em;
-  font-family: Verdana, Arial, Helvetica, sans-serif;
-  font-size: 0.7em;
+  font-size: 0.8em;
   font-weight: normal;
   text-align: left;
 }
@@ -1222,8 +1093,7 @@ ul.cols-8 li,ul.cols-8-ul,table.cols-8 td {
   float: right;
   width: 50px;
   margin: 15px -0.3em 0 0;
-  font-family: Verdana, Arial, Helvetica, sans-serif;
-  font-size: 0.7em;
+  font-size: 0.8em;
   font-weight: normal;
   text-align: right;
 }
@@ -1231,8 +1101,7 @@ ul.cols-8 li,ul.cols-8-ul,table.cols-8 td {
 .slider_lefttext {
   display: table-cell;
   padding-top: 1.5em;
-  padding-right: 11px;
-  padding-bottom: 3px;
+  padding-right: 9px;
   vertical-align: top;
   text-align: right;
   font-size: 0.9em;
@@ -1241,95 +1110,9 @@ ul.cols-8 li,ul.cols-8-ul,table.cols-8 td {
 .slider_righttext {
   display: table-cell;
   padding-top: 1.5em;
-  padding-left: 11px;
-  padding-bottom: 3px;
+  padding-left: 12px;
   vertical-align: top;
   font-size: 0.9em;
-}
-
-table.innerframe {
-  width: 75%;
-  text-align: center;
-  border-collapse: separate;
-  border-spacing: 1px;
-  margin: 20px auto 40px auto;
-  border: 1px solid #BBC6CC;
-  width: 75%;
-}
-
-table.privacy {
-  margin-top: 20px;
-}
-
-td.privacynote {
-  text-align: center;
-  background-color: #EEF6FF;
-  font-size: 10px;
-  padding: 5px;
-}
-
-table.question {
-  border-collapse: separate;
-  border-spacing: 2px;
-  margin-bottom: 20px;
-}
-
-table.question th {
-  padding: 4px 6px;
-  border-collapse: separate;
-  border-spacing: 2px;
-  font-size: 11px;
-}
-
-table.question td {
-  padding: 4px 4px;
-  border-collapse: separate;
-  border-spacing: 2px;
-}
-
-table.question input {
-  vertical-align: middle;
-}
-
-p.question {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-p.tip {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-td.answer li label,td.answer li input {
-  vertical-align: middle;
-}
-
-.rank input {
-  margin: 1px 1px;
-}
-
-.ranking td.answer {
-  padding-left: 10px;
-}
-
-td.rank label,td.rank td strong {
-  font-size: 10px;
-  font-weight: bold;
-}
-
-.list-dropdown select {
-  margin-left: 10px;
-}
-
-.choice-5-pt-radio .answer  ul {
-  margin-bottom: 10px;
-}
-
-.text-long textarea,.text-huge textarea,.text-short textarea {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-right: 10px;
 }
 
 #tokenform {
@@ -1337,7 +1120,7 @@ td.rank label,td.rank td strong {
 }
 
 #tokenform input {
-
+  
 }
 
 #tokenform label {
@@ -1377,49 +1160,54 @@ div#wrapper {
   margin-bottom: 1em;
 }
 
-.yes-no td.answer {
-  padding-bottom: 10px;
-}
-
-/* Public statistics
- */
 #statsContainer {
-  width: 75%;
-  margin: 20px auto;
-  border: 1px solid #BBC6CC;
-  font-family: Verdana, Arial, Helvetica, sans-serif;
-  font-size: 13px;
-  line-height: 120%;
+  width: 80%;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  padding: 0px;
+  min-width: 690px;
+  border: 1px solid #ccc;
 }
 
 #statsHeader {
+  color: #000000;
+  text-align: center;
   padding: 10px 0px;
-  background-color: #EEF6FF;
+  height: 96px;
+  background-color: #AABBCC;
+  font-family: Verdana, Geneva, sans-serif;
 }
 
 .statsSurveyTitle {
-  padding: 0;
-  text-align: center;
-  color: #328639;
-  font-size: 16px;
+  font-size: 1.0em;
   font-weight: bold;
+  padding: 35px 0px 0px 0px;
+  float: right;
+  width: 100%;
+  text-align: center;
 }
 
 .statsNumRecords {
-  padding: 10px 0px 0px 0px;
+  font-size: .9em;
+  clear: right;
+  float: right;
+  width: 100%;
   text-align: center;
-  color: #328639;
 }
 
 table.statisticstable {
-  width: 100%;
-  margin: 0;
-  border-top: 1px solid #BBC6CC;
+  width: 90%;
+  border: 1px solid #ccc;
+  text-align: left;
+  background-color: #fff;
+  margin: 0px auto;
+  padding-bottom: 8px;
 }
 
 table.statisticstable td {
-  line-height: 190%;
-  border-bottom: 1px solid #BBC6CC;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #CCC;
 }
 
 table.statisticstable img {
@@ -1427,19 +1215,42 @@ table.statisticstable img {
 }
 
 div.fieldSummary {
-  padding: 0;
-  text-align: center;
-  background-color: #D2E0F2;
+  font-size: .9em;
+  padding: 10px 10px 6px 0px;
+  display: block;
+  text-align: left;
 }
 
 div.questionTitle {
-  padding: 0;
+  font-size: 1.0em;
+  padding: 20px 20px 20px 20px;
+  font-weight: normal;
+  background-color: #EEEEEE;
+}
+
+td.statsImageholder {
+  background-color: #EEEEEE;
+}
+
+.array-flexible-column col.even,.array-flexible-column th.even {
+  background-color: #AABBCC;
+}
+
+.array-flexible-column thead th {
+  font-weight: normal;
+}
+
+.array-flexible-column td {
+  text-align: center;
+}
+
+#limesurvey table.question tbody th.arraycaptionleft {
   font-weight: bold;
-  background-color: #D2E0F2;
+  text-align: right;
 }
 
 /* Question Index */
-.withindex.outerframe {
+.withindex.outerframe{
   margin-left: 1em;
   margin-right: 26em;
 }
@@ -1456,16 +1267,23 @@ div.questionTitle {
   overflow-x: hidden;
   height: 100%;
   background: #fff;
-  border-left: 1px solid #ccc;
+  border-left: 4px double #999;
 }
 
-#index h2 {
-  padding: 1em;
-  background: #eef6ff;
+#index h2 { 
+  margin: 0;
+  padding: 3px;
+  height: 23px;
+  background: url("box_bg.gif") repeat-x;
   text-align: center;
+  font-family: "Verdana,Geneva,Arial,Helvetica,sans-serif";
+  font-size: 13px;
 }
 
-#index h3 { margin: 0.5em 0 0 0.5em; }
+#index h3 {
+  color: #000099;
+  margin: 0.5em 0 0 0.5em;
+}
 
 #index .container {
   width: 24em;
@@ -1489,12 +1307,13 @@ div.questionTitle {
   width: 3em;
   text-align: right;
   display: inline-block;
+  *display:inline;
   padding: 0 0.5em 0 0;
 }
 
-#index .container .row.odd { background: #EEF6FF; }
-#index .container .row.current { background: #1D2D45; color: #fff; }
-#index .container .row.missing .hdr{ color: #990000; }
+#index .container .row.odd { background: #EEE; }
+#index .container .row.current { background: #000099; color: #fff; }
+#index .container .row.missing { background: #CC0000; color: #fff; }
 #index .container input { margin: 1em; }
 
 /* Tips / Validation Messages */

@@ -1,0 +1,155 @@
+/* The following styles are for versions of IE 6 and older */
+/* line 2, sass/ie6.scss */
+.choice-5-pt-radio ul {
+  margin-left: 2.5em;
+}
+
+/* line 6, sass/ie6.scss */
+.yes-no ul, .gender ul {
+  margin-left: 1em;
+}
+
+/* line 10, sass/ie6.scss */
+.multiple-short-txt ul.numbers-only li span {
+  width: 10em;
+}
+
+/* line 15, sass/ie6.scss */
+.multiple-short-txt ul, .multiple-opt-comments ul, .numeric-multi ul, .multiple-short-txt ul li, .multiple-opt-comments ul li, .numeric-multi ul li {
+  margin-left: 0%;
+  padding-left: 0%;
+}
+
+/* line 20, sass/ie6.scss */
+.multiple-short-txt ul label {
+  margin-left: 0em;
+  float: left;
+  display: block;
+  width: 40%;
+  text-align: right;
+}
+
+/* line 28, sass/ie6.scss */
+.multiple-opt-comments ul li label {
+  float: left;
+  width: 35%;
+  display: block;
+  margin: 0;
+  padding: 0;
+  padding-left: 25px;
+}
+
+/* line 37, sass/ie6.scss */
+.multiple-opt-comments ul li span.comment {
+  float: left;
+  width: 40%;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 45, sass/ie6.scss */
+.multiple-opt-comments ul li span.comment input {
+  width: 200px;
+}
+
+/* line 49, sass/ie6.scss */
+.multiple-short-txt ul li, .multiple-opt-comments ul li {
+  float: left;
+  clear: left;
+  width: 100%;
+}
+
+/* line 55, sass/ie6.scss */
+.innergraph img {
+  height: 16px;
+  vertical-align: top;
+  margin: 0px 0px 0px 0px;
+}
+
+/* line 61, sass/ie6.scss */
+.rank select {
+  margin-top: 4px !important;
+}
+
+/* line 66, sass/ie6.scss */
+.multiple-short-txt td.answer, .date td.answer, .yes-no td.answer, .list-radio td.answer, .list-radio-flexible td.answer, .choice-5-pt-radio td.answer, .gender td.answer {
+  padding-bottom: 10px;
+}
+
+/* line 70, sass/ie6.scss */
+.date button {
+  line-height: 15px;
+  height: 21px;
+  width: 22px;
+}
+
+/* line 76, sass/ie6.scss */
+.numeric-multi ul li label {
+  float: left;
+  width: auto;
+}
+
+/* line 81, sass/ie6.scss */
+.numeric-multi ul li {
+  float: left;
+  clear: left;
+  width: 100%;
+}
+
+/* line 87, sass/ie6.scss */
+.numeric-multi ul li span {
+  padding-left: 0;
+}
+
+/* line 91, sass/ie6.scss */
+.numeric-multi input {
+  padding-left: 1px;
+}
+
+/* line 95, sass/ie6.scss */
+input.submit {
+  padding: 0px;
+}
+
+/** UI Slider **/
+/* line 100, sass/ie6.scss */
+.numeric-multi label.slider-label {
+  margin-top: 1.3em;
+  display: inline;
+  width: 40%;
+}
+
+/* line 106, sass/ie6.scss */
+.slider_lefttext {
+  float: left;
+  padding-top: 1.45em;
+}
+
+/* line 111, sass/ie6.scss */
+.slider_righttext {
+  float: left;
+  padding-top: 1.45em;
+}
+
+/* line 116, sass/ie6.scss */
+.ui-slider-1 {
+  position: relative;
+}
+
+/* line 120, sass/ie6.scss */
+.slider_showmin {
+  margin: 0;
+  float: none;
+  position: absolute;
+  top: 17px;
+}
+
+/* line 127, sass/ie6.scss */
+.slider_showmax {
+  margin: 0;
+  float: none;
+  position: absolute;
+  top: 17px;
+  left: 150px;
+}

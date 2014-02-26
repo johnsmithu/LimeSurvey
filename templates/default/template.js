@@ -24,9 +24,7 @@
  */
 function focusFirst(Event)
 {
-	
 	$('#limesurvey :input:visible:enabled:first').focus();
-
 }
 /*
  * The focusFirst function is added to the eventlistener, when the page is loaded.

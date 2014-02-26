@@ -1,0 +1,3 @@
+[submodule "upload/templates/gba"]
+	path = upload/templates/gba
+	url = git@github.com:GreenAmerica/cert-template.git
