@@ -883,15 +883,15 @@ function doHtmlSaveAll($move="")
     {
         if ($thissurvey['tokenanswerspersistence'] != 'Y' || !isset($surveyid) || !tableExists('tokens_'.$surveyid))
         {
-            $_saveall .= CHtml::htmlButton($clang->gT("Load unfinished survey"),$aHtmlOptionsLoadall);
+            $_saveall .= CHtml::htmlButton($clang->gT("Load your unfinished survey"),$aHtmlOptionsLoadall);
         }
-        $_saveall .= CHtml::htmlButton($clang->gT("Resume later"),$aHtmlOptionsSaveall);
+        $_saveall .= CHtml::htmlButton($clang->gT("Save for later"),$aHtmlOptionsSaveall);
     }
     elseif ($surveyid && (!isset($_SESSION['survey_'.$surveyid]['step']) || !$_SESSION['survey_'.$surveyid]['step']))//First page, show LOAD (but not save)
     {  
         if ($thissurvey['tokenanswerspersistence'] != 'Y' || !isset($surveyid) || !tableExists('tokens_'.$surveyid))
         {
-            $_saveall .= CHtml::htmlButton($clang->gT("Load unfinished survey"),$aHtmlOptionsLoadall);
+            $_saveall .= CHtml::htmlButton($clang->gT("Load your unfinished survey"),$aHtmlOptionsLoadall);
         }
     }
     elseif ($surveyid && (isset($_SESSION['survey_'.$surveyid]['maxstep']) && $_SESSION['survey_'.$surveyid]['maxstep']==1) && $thissurvey['showwelcome']=="N")//First page, show LOAD and SAVE
@@ -900,7 +900,7 @@ function doHtmlSaveAll($move="")
         {
             $_saveall .= CHtml::htmlButton($clang->gT("Load unfinished survey"),$aHtmlOptionsLoadall);
         }
-        $_saveall .= CHtml::htmlButton($clang->gT("Resume later"),$aHtmlOptionsSaveall);
+        $_saveall .= CHtml::htmlButton($clang->gT("Save for later"),$aHtmlOptionsSaveall);
     }
     elseif (!isset($_SESSION['survey_'.$surveyid]['scid']) || $move == "movelast") // Not on last page or submited survey
     {
