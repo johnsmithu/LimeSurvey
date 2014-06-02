@@ -14,16 +14,15 @@
 
 <?php
 function getGroups($surveyid){
-            $language = Survey::model()->findByPk($surveyid)->language;
+           $language = Survey::model()->findByPk($surveyid)->language;
             return Yii::app()->db->createCommand()
-            ->select(array('description'))
+            ->select(array('gid', 'description'))
             ->from($this->tableName())
             ->where(array('and', 'sid=:surveyid', 'language=:language'))
             ->order('group_order asc')
             ->bindParam(":language", $language, PDO::PARAM_STR)
             ->bindParam(":surveyid", $surveyid, PDO::PARAM_INT)
             ->query()->readAll();
-        }
 
 
         $bGrouplist = QuestionGroup::model()->getGroups($surveyid);
