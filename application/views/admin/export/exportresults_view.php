@@ -10,11 +10,13 @@
     ?>
 </div>
 
+// BEGIN. I APPENDED THIS. it probably won't work though
+
 <?php
-function getGroups($surveyid) {
+function getGroupdesc($surveyid) {
             $language = Survey::model()->findByPk($surveyid)->language;
             return Yii::app()->db->createCommand()
-            ->select(array('gid', 'description'))
+            ->select(array('description'))
             ->from($this->tableName())
             ->where(array('and', 'sid=:surveyid', 'language=:language'))
             ->order('group_order asc')
@@ -23,6 +25,15 @@ function getGroups($surveyid) {
             ->query()->readAll();
         }
 ?>
+
+        $bGrouplist = QuestionGroup::model()->getGroups($iSurveyID);
+
+        foreach ($aGrouplist as $desc)
+        {
+              echo "$value <br>";
+        }
+
+// END
 
 <div class='wrap2columns'>
     <?php echo CHtml::form(array('admin/export/sa/exportresults/surveyid/'.$surveyid), 'post', array('id'=>'resultexport'));?>
