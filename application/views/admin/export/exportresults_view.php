@@ -24,7 +24,7 @@ function getGroupdesc($surveyid) {
             ->bindParam(":surveyid", $surveyid, PDO::PARAM_INT)
             ->query()->readAll();
         }
-?>
+
 
         $bGrouplist = QuestionGroup::model()->getGroups($iSurveyID);
 
@@ -32,6 +32,8 @@ function getGroupdesc($surveyid) {
         {
               echo "$value <br>";
         }
+        
+        ?>
 
 // END
 
