@@ -26,11 +26,11 @@ function getGroupdesc($surveyid) {
         }
 
 
-        $bGrouplist = QuestionGroup::model()->getGroups($iSurveyID);
+        $bGrouplist = QuestionGroup::model()->getGroupdesc($iSurveyID);
 
-        foreach ($aGrouplist as $desc)
+        foreach ($bGrouplist as $desc)
         {
-              echo "$value <br>";
+              echo "$desc <br>";
         }
         
         ?>
