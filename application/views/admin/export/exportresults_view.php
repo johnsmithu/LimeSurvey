@@ -14,7 +14,7 @@
 function getGroups($surveyid) {
             $language = Survey::model()->findByPk($surveyid)->language;
             return Yii::app()->db->createCommand()
-            ->select(array('gid', 'description'))
+            ->select(array('description'))
             ->from($this->tableName())
             ->where(array('and', 'sid=:surveyid', 'language=:language'))
             ->order('group_order asc')
