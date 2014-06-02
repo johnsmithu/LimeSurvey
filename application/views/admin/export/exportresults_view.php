@@ -9,6 +9,21 @@
             echo " - ".sprintf($clang->gT("Single response: ID %s"),$SingleResponse);} 
     ?>
 </div>
+
+<?php
+function getGroups($surveyid) {
+            $language = Survey::model()->findByPk($surveyid)->language;
+            return Yii::app()->db->createCommand()
+            ->select(array('gid', 'description'))
+            ->from($this->tableName())
+            ->where(array('and', 'sid=:surveyid', 'language=:language'))
+            ->order('group_order asc')
+            ->bindParam(":language", $language, PDO::PARAM_STR)
+            ->bindParam(":surveyid", $surveyid, PDO::PARAM_INT)
+            ->query()->readAll();
+        }
+?>
+
 <div class='wrap2columns'>
     <?php echo CHtml::form(array('admin/export/sa/exportresults/surveyid/'.$surveyid), 'post', array('id'=>'resultexport'));?>
         <div class='left'>
