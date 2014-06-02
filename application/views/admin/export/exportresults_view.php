@@ -13,7 +13,7 @@
 // BEGIN. I APPENDED THIS. it probably won't work though
 
 <?php
-function getGroupdesc($surveyid) {
+function getGroups($surveyid){
             $language = Survey::model()->findByPk($surveyid)->language;
             return Yii::app()->db->createCommand()
             ->select(array('description'))
@@ -26,7 +26,7 @@ function getGroupdesc($surveyid) {
         }
 
 
-        $bGrouplist = QuestionGroup::model()->getGroupdesc($iSurveyID);
+        $bGrouplist = QuestionGroup::model()->getGroups($surveyid);
 
         foreach ($bGrouplist as $desc)
         {
